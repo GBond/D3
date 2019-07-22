@@ -1,18 +1,15 @@
-# Everything needed in production
+# requirements/prod.txt
 
-Werkzeug
-SQLAlchemy==1.1.9
-Flask_Caching
-Flask_SQLAlchemy==2.2
-click
-marshmallow
-Flask_Bcrypt
-flask_apispec
-Flask
-PyJWT
-Flask-JWT-Extended
-unicode_slugify
-psycopg2
-Flask-Migrate
-gunicorn
-Flask-Cors
+# Everything needed in production
+# Flask
+Flask==1.1.1
+Werkzeug==0.15.5
+
+# Deployment
+gunicorn==19.7.1
+
+# Test
+behave==1.2.5
+WebTest==2.0.29
+#only in python 2.7
+mock==2.0.0

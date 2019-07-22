@@ -1,14 +1,20 @@
-# Config file for automatic testing at travis-ci.org
-sudo: false  # http://docs.travis-ci.com/user/migrating-from-legacy/
 language: python
+
 python:
   - 2.7
-  - 3.4
   - 3.5
   - 3.6
-install: pip install -r requirements/dev.txt
-before_script:
-  - export FLASK_APP="$TRAVIS_BUILD_DIR/hello.py"
-  - export FLASK_DEBUG=1
 
-script: python test
+install:
+  - pip install -r requirements/dev.txt
+  - pip install codecov
+
+script:
+  - python -m unittest discover
+  - behave
+  - coverage erase
+  - coverage run test_webapp.py && coverage html
+  - pylint --output-format=text webapp.py
+
+after_success:
+  - codecov
