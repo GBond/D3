@@ -4,6 +4,6 @@ from behave import *
 def step_impl(ctx):
     ctx.resp = ctx.client.get('/')
 
-@then(u'{text} should be displayed')
+@then(u'Home Page should be displayed')
 def step_impl(ctx):
-    assert text in ctx.resp
+    assert 'Home Page' in ctx.resp
