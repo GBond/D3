@@ -1,6 +1,6 @@
 from webtest import TestApp
 
-from app import webapp
+from webapp import app
 
 def before_scenario(context, scenario):
     context.client = TestApp(app)
