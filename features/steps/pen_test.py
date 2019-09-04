@@ -1,7 +1,9 @@
 import json
 import re
 import sys
+from zapv2 import ZAPv2
 from behave import *
+
 results_file = 'results.json'
 
 @given('we have valid json alert output')
