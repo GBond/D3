@@ -1,7 +1,7 @@
 import json
 import re
 import sys
-from behave import *
+from behave import given, then, when
 
 results_file = 'results.json'
 
