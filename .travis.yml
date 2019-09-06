@@ -8,7 +8,6 @@ python:
 install:
   - pip install -r requirements/dev.txt
   - pip install codecov
-  - pip install python-owasp-zap-v2.4
 
 script:
   - python -m unittest discover
