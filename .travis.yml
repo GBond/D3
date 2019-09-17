@@ -20,4 +20,4 @@ after_success:
   - codecov
 
 notifications:
-  slack: SLACKSECRET
+  slack: f5devops:CrAlC3U8CJDvcUi8RvWH0QRk
