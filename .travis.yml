@@ -13,7 +13,7 @@ script:
   - python -m unittest discover
   - behave
   - coverage erase
-  - coverage run test_webapp.py && coverage html
+  - coverage run test_app.py && coverage html
   #  pylint --output-format=text webapp.py
 
 after_success:
