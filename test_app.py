@@ -1,16 +1,16 @@
 import unittest
-import webapp
+import app
 
 
 class HomeViewTest(unittest.TestCase):
 
     def setUp(self):
-      self.app = webapp.app.test_client()
+      self.app = app.app.test_client()
       self.app.testing = True
 
     def test_home_page(self):
         home = self.app.get('/')
-        self.assertIn('Home Page', str(home.data))
+        self.assertIn('Borrow - A Loan Company Whom You can Trust with Your Personal Data', str(home.data))
 
 
 if __name__ == "__main__":
