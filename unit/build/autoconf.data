@@ -1,0 +1,26 @@
+
+NXT_SYSTEM='Darwin'
+
+CC='cc'
+CFLAGS=''
+
+NXT_CC_NAME='clang'
+NXT_CFLAGS=' -pipe -fPIC -fvisibility=hidden -O -W -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -fstrict-aliasing -Wstrict-overflow=5 -Wmissing-prototypes -Werror -g'
+NXT_CC_OPT=''
+NXT_LD_OPT=''
+NXT_MODULE_LINK='$(CC) -dynamiclib -undefined dynamic_lookup'
+
+NXT_TEST_CFLAGS=''
+NXT_TEST_LIBS=''
+
+NXT_LIBRT=''
+
+echo=build/echo
+
+NXT_LIB_AUX_CFLAGS=
+NXT_LIB_AUX_LIBS=
+
+NXT_LIB_UNIT_STATIC='libunit.a'
+
+NXT_MODULES='modules'
+
