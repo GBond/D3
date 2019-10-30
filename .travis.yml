@@ -10,7 +10,7 @@ install:
   # - pip install codecov
 
 script:
-  # - python -m unittest discover
+   python -m unittest test_app.py
   # - behave
   # - coverage erase
   # - coverage run test_app.py && coverage html
