@@ -7,17 +7,17 @@ python:
 
 install:
   - pip install -r requirements/dev.txt
-  - pip install codecov
+  # - pip install codecov
 
 script:
   # - python -m unittest discover
-  - behave
-  - coverage erase
-  - coverage run test_app.py && coverage html
+  # - behave
+  # - coverage erase
+  # - coverage run test_app.py && coverage html
   #  pylint --output-format=text webapp.py
 
 after_success:
-  - codecov
+  # - codecov
 
 notifications:
   slack: f5devops:CrAlC3U8CJDvcUi8RvWH0QRk
