@@ -13,3 +13,6 @@ behave==1.2.5
 WebTest==2.0.29
 #only in python 2.7
 mock==2.0.0
+
+#DB
+SQLAlchemy
