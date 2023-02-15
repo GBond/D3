@@ -3,7 +3,7 @@
 # Everything needed in production
 # Flask
 Flask==1.1.1
-Werkzeug==0.15.5
+Werkzeug==2.2.3
 
 # Deployment
 gunicorn==19.7.1
